@@ -1,6 +1,6 @@
 # checkra1n-linux Live USB Linux
 
-## [Download Release](https://github.com/downthecrop/checkra1n-linux/releases/tag/0.9.8.2)
+## [Download Release](https://github.com/khevin014/checkra1n-linux/releases)
 
 ## Portable minimal boot environment for use with checkra1n
 
