@@ -1,11 +1,7 @@
 ::sysinit:/etc/04_bootscript.sh
 ::restart:/sbin/init
-::shutdown:echo -e "\nSyncing all file buffers."
 ::shutdown:sync
-::shutdown:echo "Unmounting all filesystems."
 ::shutdown:umount -a -r
-::shutdown:echo -e "\n  \\e[1mCome back soon. :)\\e[0m\n"
-::shutdown:sleep 1
 ::ctrlaltdel:/sbin/reboot
 ::once:cat /etc/motd
 ::respawn:/bin/cttyhack /bin/sh

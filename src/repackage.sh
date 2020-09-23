@@ -15,5 +15,4 @@ set -e
 ./12_get_systemd-boot.sh
 ./13_prepare_iso.sh
 ./14_generate_iso.sh
-./15_generate_image.sh
 ./16_cleanup.sh

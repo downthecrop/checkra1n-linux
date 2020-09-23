@@ -1,4 +1,0 @@
-glibc_libnsl
-#glibc_libnss_compat
-glibc_libutil
-glibc_libcrypt

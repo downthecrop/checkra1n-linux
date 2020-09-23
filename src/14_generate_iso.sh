@@ -53,7 +53,7 @@ both() {
     -e boot/uefi.img \
       -no-emul-boot \
       -isohybrid-gpt-basdat \
-    -o $SRC_DIR/minimal_linux_live.iso \
+    -o $SRC_DIR/checkra1n_linux_live.iso \
   $ISOIMAGE
 }
 
