@@ -10,9 +10,9 @@ Requirements: 64bit CPU, USB Thumbdrive
 
 Download [Rufus](https://github.com/pbatard/rufus/releases/download/v3.11/rufus-3.11.exe)
 
-Download [checkra1n-0.10.2_linux_live-5.8.iso](https://github.com/khevin014/checkra1n-linux/releases/download/alpha/checkra1n-0.10.2_linux_live-5.8.iso)
+Download [checkra1n Linux Live](https://github.com/downthecrop/checkra1n-linux/releases/latest)
 
-Write checkra1n-0.10.2_linux_live-5.8.iso to USB using DD mode. Do not use ISO mode.
+Write checkra1n_linx_live.iso to USB using DD mode. Do not use ISO mode.
 
 Restart computer, boot from USB (UEFI and BIOS supported)
 
@@ -23,14 +23,10 @@ Restart computer, boot from USB (UEFI and BIOS supported)
 sudo apt install wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev
 
 # Build everything and produce ISO image.
-sudo ./build_minimal_linux_live.sh
-```
+sudo ./build_checkra1n_linux_live.sh
 
-If you fail to install libssl-dev from the default Ubuntu repos (Ubuntu 18.04) you can use the libssl-dev_1.1.deb file which should resolve the version conflicts
-
-```
-# Install libssl-dev
-sudo dpkg -i libssl-dev_1.1.1-1ubuntu2.1~18.04.5_amd64.deb
+# After you've built the kernel you can repackage the ISO without completely rebuilding using
+sudo ./repackage.sh
 ```
 
 If you want to add/change files to the boot environment add them to `minimal_overlay/rootfs/`
